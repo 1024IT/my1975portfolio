@@ -1,15 +1,60 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>the 1975</title>
-<!--   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"> -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
   <link rel="stylesheet" href="the1975.css" type="text/css">
+  <script type="text/javascript">
+    $(document).ready(function () {
+  $('.hamburger-menu').on('click', function () {
+
+    $('.animated-icon').toggleClass('show');
+  });
+});
+  </script>
 </head>
 <body>
-<!-- 　　<div class="header" margin="0"> 
-  　　<div class="menubarwords"> -->
- <!--    <div class="header"> -->
-    <header class="header">
+  <nav class="navbar navbar-expand-md fixed-top container-fluid">
+    <div class="row">
+      <div  id="menuBarToggler" class="col-10 d-md-none">
+        <div class="navbar-toggler hamburger-menu" role="button" data-toggle="collapse" data-target="#navbarButtons" aria-controls="navbarButtons" aria-expanded="false">
+          <div class="animated-icon"><span></span><span></span><span></span></div>
+          </div>
+      </div>
+
+      <a id="dirtyhit_link" class="col-2" href="https://dirtyhit.co.uk/" target="_blank">DIRTY HIT</a>
+
+      <div class="collapse navbar-collapse col-md-10 order-md-first" id="navbarButtons">
+        <ul class="navbar-nav">
+          <li class="nav-item mt-3 mt-md-0">
+            <a class="nav-link" href="#">TOP <span class="sr-only">(current)</span></a>
+          </li>
+          <hr class="d-md-none">
+          <li class="nav-item">
+            <a class="nav-link" href="#">NEWS</a>
+          </li>
+          <hr class="d-md-none">
+          <li class="nav-item">
+            <a class="nav-link" href="#">BIOGRAPHY</a>
+          </li>
+          <hr class="d-md-none">
+          <li class="nav-item">
+            <a class="nav-link" href="#">MOVIE</a>
+          </li>
+          <hr class="d-md-none">
+          <li class="nav-item">
+            <a class="nav-link" href="#">LIRIC</a>
+          </li>
+          <hr class="d-md-none">
+          <li>
+            <a class="nav-link" href="#">STORE</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+<!--     <header class="header">
     <p class="mattyimage">
     <img src="images/matty-smoke.jpg" alt="matty smoke image"> 
     </p>
@@ -22,16 +67,16 @@
           <p class="movie"><a href="#">MOVIE</a></p>
           <p class="lyric"><a href="#">LYRIC</a></p>
   　　    <p class="store"><a href="#">STORE</a></p>
-        </div> <!-- menubarwords -->
+        </div> 
         <div class="menubar-lines">
   　　    <p class="v_line_fix1"></p>
   　　    <p class="v_line_fix2"></p>
   　　    <p class="v_line_fix3"></p>
   　　    <p class="v_line_fix4"></p>
   　　    <p class="v_line_fix5"></p>
-        </div> <!-- menubar-lines -->
-      </div> <!-- backofmenubar -->
-</header>
+        </div> 
+      </div> 
+</header> -->
 
 
   <div class="main">
@@ -171,6 +216,7 @@
   こんにちは。私の名前は田中です。
   <span class="hello">hello</span>
 　　</div> -->
-
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
 </body>
 </html>
