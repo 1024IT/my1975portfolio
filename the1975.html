@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html lang="ja">
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>the 1975</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
   <link rel="stylesheet" href="the1975.css" type="text/css">
-  <script type="text/javascript">
+  <script>
     $(document).ready(function () {
   $('.hamburger-menu').on('click', function () {
 
@@ -15,9 +15,9 @@
   </script>
 </head>
 <body>
-  <nav class="navbar navbar-expand-md fixed-top container-fluid">
+  <nav class="navbar navbar-expand-lg fixed-top container-fluid">
     <div class="row">
-      <div  id="menuBarToggler" class="col-10 d-md-none">
+      <div  id="menuBarToggler" class="col-10 d-lg-none">
         <div class="navbar-toggler hamburger-menu" role="button" data-toggle="collapse" data-target="#navbarButtons" aria-controls="navbarButtons" aria-expanded="false">
           <div class="animated-icon"><span></span><span></span><span></span></div>
           </div>
@@ -25,28 +25,23 @@
 
       <a id="dirtyhit_link" class="col-2" href="https://dirtyhit.co.uk/" target="_blank">DIRTY HIT</a>
 
-      <div class="collapse navbar-collapse col-md-10 order-md-first" id="navbarButtons">
+      <div class="collapse navbar-collapse col-lg-10 order-lg-first" id="navbarButtons">
         <ul class="navbar-nav">
-          <li class="nav-item mt-3 mt-md-0">
+          <li class="nav-item mt-3 mt-lg-0">
             <a class="nav-link" href="#">TOP <span class="sr-only">(current)</span></a>
           </li>
-          <hr class="d-md-none">
           <li class="nav-item">
             <a class="nav-link" href="#">NEWS</a>
           </li>
-          <hr class="d-md-none">
           <li class="nav-item">
             <a class="nav-link" href="#">BIOGRAPHY</a>
           </li>
-          <hr class="d-md-none">
           <li class="nav-item">
             <a class="nav-link" href="#">MOVIE</a>
           </li>
-          <hr class="d-md-none">
           <li class="nav-item">
             <a class="nav-link" href="#">LIRIC</a>
           </li>
-          <hr class="d-md-none">
           <li>
             <a class="nav-link" href="#">STORE</a>
           </li>
@@ -54,172 +49,34 @@
       </div>
     </div>
   </nav>
-<!--     <header class="header">
-    <p class="mattyimage">
-    <img src="images/matty-smoke.jpg" alt="matty smoke image"> 
-    </p>
-      <a class="dirty-hit" href="https://dirtyhit.co.uk/" target="_blank">DIRTY HIT</a>
-  　　<div class="backofmenubar" style="width: 711px; height: 64px"></div>
-        <div class="menubarwords">
-  　　    <p class=top><a href="#">TOP</a></p>
-          <p class="news"><a href="#">NEWS</a></p>
-          <p class="biography"><a href="#">BIOGRAPHY</a></p>
-          <p class="movie"><a href="#">MOVIE</a></p>
-          <p class="lyric"><a href="#">LYRIC</a></p>
-  　　    <p class="store"><a href="#">STORE</a></p>
-        </div> 
-        <div class="menubar-lines">
-  　　    <p class="v_line_fix1"></p>
-  　　    <p class="v_line_fix2"></p>
-  　　    <p class="v_line_fix3"></p>
-  　　    <p class="v_line_fix4"></p>
-  　　    <p class="v_line_fix5"></p>
-        </div> 
-      </div> 
-</header> -->
 
 
-  <div class="main">
-    <p class="mattyimage">
-    <img src="images/matty-smoke.jpg" alt="matty smoke image"> 
-    </p>
-    <div class="title">
-      <h1 class="the">THE</h1>
-      <h1 class="bandname">1975</h1>
-      <p>
-      マンチェスター出身の謎めいたこの４人組。<br>
-      陰鬱なアート・ロックと、冷ややかなエレクトロニカ、<br>
-      ダンスフロア系R&Bに、キンキンしたヒップホップ、<br>
-      微かな光の揺らめくバラードや、<br>
-      80年代風のベタなポップとの間を縦横無尽に行き来する彼らの音楽に、<br>
-      評論家達は当惑し、戸惑いながらも心奪われ、<br>
-      純粋に胸を躍らせてきた。
-      </p>
+
+  <div class="main pt-5 pt-lg-0">
+    <div class="hero container-fluid">
+      <h1 class="mobile-title d-lg-none pt-3">THE 1975</h1>
+      <div class="row">
+        <div class="hero-image-wrapper col-lg-6 pl-lg-5">
+          <img class="mattyimage" src="images/matty-smoke.jpg" alt="matty smoke image">
+        </div>
+        <div class="hero-copy col-lg-6 px-lg-3 my-auto">
+          <h1 class="desktop-title d-none d-lg-block mb-5">THE 1975</h1>
+          <p>マンチェスター出身の謎めいたこの４人組。</p>
+          <p>陰鬱なアート・ロックと、冷ややかなエレクトロニカ、</p>
+          <p>ダンスフロア系R&Bに、キンキンしたヒップホップ、</p>
+          <p>微かな光の揺らめくバラードや、</p>
+          <p>80年代風のベタなポップとの間を縦横無尽に行き来する彼らの音楽に、</p>
+          <p>評論家達は当惑し、戸惑いながらも心奪われ、</p>
+          <p>純粋に胸を躍らせてきた。</p>
+        </div>
+      </div>
+    </div>
   </div>
 
-  <div class="border-of-the-1975">
-    <p class="the-1975-background"><img src="images/mattylive1.jpg" alt="写真"></p>
-    <p class="the-1975-jacket"><img src="images/the-1975-jacket.png"></p>
-    <h2 class="first-album-title">THE 1975</h2>
-      <div class="border-of-paragraph-of-the-1975"> 
-        <p class="paragraph-of-the-1975">『The 1975』に詰め込まれている音楽的なアイディアは、驚くほど盛りだくさんだ。その音楽的な節操のなさ、あるいは折衷性は、間違いなく現代的だと言える。だが、やはり彼らの最大の魅力とは、そういった重層的なサウンドを下手に小難しくインテリジェントに仕上げるのではなく、日曜の昼下がりに車のラジオをつけていたら何気なくトップ40の番組から流れてくるのがしっくりとくるような、強度の高いポップスに昇華出来ているところだろう。
-        </p>
-        <p class="reference-of-paragraph-of-the-1975">
-        ザ・サイン・マガジン・ドットコム「薄暗い路地裏から抜け出し、ひたすらきらびやかな<br>表通りに飛び出た、新世代マンチェスター・バンドが夢見る先はどこか」
-        </p>
-      </div> <!-- ←album-title1 -->
-    </div>  <!-- ←border-of-the-1975 -->
-
-  <div class="border-of-i-like-it">
-    <p class="jacket-of-i-like-it"><img src="images/I-like-it-jacket.png" alt="写真"><p>  
-    <p class="background-of-i-like-it"><img src="images/mattylive3.png" alt="写真"></p>
-      <div class="border-of-paragraph-of-i-like-it">
-        <h2 class="second-album-title">I Like It When You Sleep,<br> For You Are So Beautiful<br>yet So Unaware of It</h2>
-        <p class="paragraph-of-i-like-it">”戦争は答えではない”と哀しげに歌うマーヴィンゲイの声に込められたメッセージと深い悲しみはいつの時代にも訴えかける力強さがある。ある意味では、その柔軟性こそが優れた音楽の条件なのかもしれない。そういった意味でも、The 1975の2ndアルバムは間違いなく今の時代を代表する一枚と呼べるだろう。</p>
-        <p class="reference-of-i-like-it">音楽文「The 1975『君の寝ている姿が〜』と多様性とヒューマニズム」</p>
-      </div> <!-- border-of-i-like-it-paragraph -->
-  </div> <!-- border-of-i-like-it -->
-
-  <div class="border-of-brief">
-    <p class="background-of-brief"><img src="images/mattylive4.png" alt="写真"></p>
-    <p class="jacket-of-brief"><img src="images/brief-jacket.png" alt="写真"></p>
-      <div class="border-of-paragraph-of-brief">
-        <h2 class ="third-album-title">A Brief Inquiry Into<br>Online Relationship</h2>
-        <p class="paragraph-of-brief">暴力と差別、権力と搾取、そして格差による構造の二極化など、対立と分断が進み混沌を極める2018年の熱気を冷まし包み込むセラピーのような優しさと失望感にも似た批評が重なりあった、時代を更新するかのようなアルバムだ。</p>
-        <p class="reference-of-brief">音楽文「グローバリズムとThe 1975のラブソング」</p>
-　    </div> <!-- border of brief　 -->
-  </div> <!-- border of paragraph of brief -->
-
-  <div class="border-of-notes">
-    <p class="jacket-of-notes"><img src="images/notes.png" alt="写真"></p>
-    <p class="background-of-notes"><img src="images/mattylive5.png" alt="写真"></p>
-      <div class="border-of-paragraph-of-notes">
-        <h2 class ="fourth-album-title">Notes On a Conditional Form</h2>
-        <p class="paragraph-of-notes">日本でも新型コロナの影響で世間の目が社会と世界に向けざるを得ない日常になっている。コロナ禍は、80年代以降、政治の匂いが脱臭された日本の文化に、再び社会的な視点を取り戻すチャンスだ。文化に逃避主義を求める時代は終わったんだよ。僕らは社会と向かい合って、脆くなった社会を再び建て直していこう。その時に本作『Notes On A Conditional Form』が素敵なサウンドトラックになるだろう。</p>
-        <p class="reference-of-notes">とかげ日記「THE 1975『Notes On A Conditional Form』感想&レビュー」</p>
-　    </div> <!-- border of paragraph-of-notes-->
-  </div> <!-- border of notes -->
-
-<div class="MOST">MOSTPOS</div>
-
-<div class="border-of-video">
-    <p class="grey"><img src="images/grey.png" alt="写真"></p>
-    <p class="pink"><img src="images/pink.png" alt="写真"></p>
-      <div class ="grey-paragraph">
-        <h3 class="video-title">The 1975 - Matty Healy breaks down <br>The 1975’s videos from ‘A Brief Inquiry…’</h3>
-        <p class="video-explanation">The 1975のフロントマン・マティーが、アルバム『A Brief Inquiry into Online Relationships』に収録されているＭＶについて掘り下げていく。イースターエッグやこれまで知られていなかった詳細を明らかにしながら、The 1975が紡ぐすべてのアートを解説する。</p>
-      </div>                <!-- grey paragraph   -->
-      <div class="pink-paragraph">
-        <h3 class="video">VIDEO</h3>
-        <iframe class="YouTube" width="391" height="220" src="https://www.youtube.com/embed/ugf5k0J8C3I" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <p class="view-more">view more</p>
-        <p class="arrow1"></p>
-      </div> <!-- pink paragraph   -->
-</div> <!-- video -->
-
-<div class="MODERNWAY">MODERNWAY</div>
-
-<div class="background-of-store-page">
-    <div class="background-of-store-page-title">
-        <p class="text-store">STORE</p>
-    </div>   
-    <div class="t-shirts">
-        <p class="t-shirt"><img class="t1" href="#" src="images/t-shirt1.png" alt="写真"></p>
-        <p class="t-shirt"><img class="t2" href="#" src="images/t-shirt2.png" alt="写真"></p>    
-        <p class="t-shirt"><img class="t3" href="#" src="images/t-shirt3.png" alt="写真"></p>
-        <a class="t1-explanation"><span class="title-t-shirt">THE 1975 / Robbers Tee</span><br>発売日：2020年05月22日<br> 価格：5,500円(税込)</a>
-        <a class="t2-explanation"><span class="title-t-shirt">THE 1975 / Baby Photo Tee</span><br>発売日：2020年05月22日<br>価格：5,500円(税込)</a>
-        <a class="t3-explanation"><span class="title-t-shirt">THE 1975 / ME AND YOU Tee</span><br>発売日：2020年05月22日<br>価格：5,500円(税込)</a>
-    </div> <!-- t-shirts -->
-    <div class="view-more-arrow2">
-         <a href="#" class="view-more2">view more</a>
-         <a href="#" class="arrow2"></a>
-    </div>     
-</div><!-- background-of-store-page -->
-
-<div class="border-of-blog">
-    <p><img class="blog" src="images/blog.png"alt="写真"></p>
-    <p><img class="blog-shadow" src="images/blog-shadow.png" alt="写真"></p>
-    <p><img class="news" src="images/news.png"alt="写真"></p>
-    <p><img class="news-shadow" src="images/news-shadow.png" alt="写真"></p>
-        <div class="blog-box-outside">
-            <div class="blog-box-inside"></div>
-            <div class="text-blog">BLOG</div>
-        </div>
-        <div class="news-box-outside">
-            <div class="news-box-inside"></div>        
-            <div class="text-news">NEWS</div>
-        </div>    
-</div><!-- border-of-blog -->
-<div class="SNS">
-    <p class="sns"><img src="images/sns.png" alt="写真"></p>
-</div>
-
-</div> <!-- ←main -->
-
-<div class="footer">
-    <div class="label"><span style="font-weight: bold">レーベル</span> / UNIVERSAL INTERNATIONAL　<span style="font-weight: bold;">ジャンル</span> / 洋楽
-    </div>
-    <p class="news-letter">ニュースレター　会社概要　個人情報 | クッキーポリシー　ウェブサイトにおける免責事項</p>
-    <p class="copy-right">copyright © 2020 universal Music LLC All rights reserved</p>
-</div> <!-- footer -->
 
 
 
-
-
-<!--     <div class="hello">こんにちは
-    <p class="morning">おはよう</p>
-    <p class="night">こんばんは</p>
-    </div> -->
-
-<!--     <imag src="mattylive1.jpg" alt="matty image"> -->
-
-<!--  <div>
-  こんにちは。私の名前は田中です。
-  <span class="hello">hello</span>
-　　</div> -->
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
 </body>
 </html>
