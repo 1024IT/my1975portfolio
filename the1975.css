@@ -1,57 +1,3 @@
-/*@charset "UTF-8";
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  margin-top: 0;
-  padding: 0;
-  padding-top: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}*/
-/* HTML5 display-role reset for older browsers */
-/*article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-  line-height: 1;
-}
-ol, ul {
-  list-style: none;
-}
-blockquote, q {
-  quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: '';
-  content: none;
-}
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-*/
-
-
-
-/*//////////////////////////////////////////////////////////////*/
-
-
 
 body {
 	background-color: #222222;
@@ -230,21 +176,61 @@ button.hamburger-menu:focus, button.hamburger-menu:hover {
 
 
 .album-quote h2 {
-	font-size: 37px;
-	text-align: right; 
-	line-height: 0.1em;
+	position: relative;
 	white-space: nowrap;
-} 
+	overflow: hidden;
+}
+
+.first-album h2, .third-album h2 {
+	text-align: right;
+}
+
+.first-album h2 {
+	font-size: 37px;
+}
+
+.second-album h2, .third-album h2 {
+	font-size: 27px;
+}
+
+.fourth-album h2 {
+	font-size: 29px;
+}
 
 .album-quote h2 span {
 	display: inline-block;
-	width: 65%;
+	line-height: 0.2em;
+	width: 60%;
 	border-bottom: 1px solid white;
+}
+
+.first-album h2:before, .third-album h2:before {
+  background-color: white;
+  content: "";
+  display: inline-block;
+  height: 1px;
+  position: relative;
+  vertical-align: middle;
+  width: 50%;
+  right: 0.5em;
+  margin-left: -50%;
+}
+
+.second-album h2:after, .fourth-album h2:after {
+	background-color: white;
+  content: "";
+  display: inline-block;
+  height: 1px;
+  position: relative;
+  vertical-align: middle;
+  width: 50%;
+  left: 0.5em;
+  margin-right: -50%;
 }
 
 .album-quote p {
 	font-size: 14px;
-	line-height: 2.5
+	line-height: 2.5;
 }
 
 .album-quote p.quote-reference {
@@ -274,21 +260,46 @@ button.hamburger-menu:focus, button.hamburger-menu:hover {
   	position: absolute;
   	top: 50%;
   	transform: translateY(-50%);
-  	left: -100px;
   	z-index: 1;
   }
-  .album-quote {
-		background-image: url(images/mattylive1.jpg);
+  .first-album img, .third-album img {
+  	left: -100px;
+  }
+  .second-album img, .fourth-album img {
+  	right: -100px;
+  }
+	.album-quote {
 		background-repeat: no-repeat;
 		background-position: center;
 		background-size: cover;
 		padding: 0 0;
 	}
+	.first-album .album-quote {
+		background-image: url(images/mattylive1.jpg);
+	}
+
+	.second-album .album-quote {
+		background-image: url(images/mattylive3.png);
+	}
+
+	.third-album .album-quote {
+		background-image: url(images/mattylive4.png);
+	}
+
+	.fourth-album .album-quote {
+		background-image: url(images/mattylive5.png);
+	}
+
 	.album-quote .image-filter {
 		height: 100%;
 		width: 100%;
-		padding: 10% 20% 5% 10%;
 		background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+	}
+	.first-album .image-filter, .third-album .image-filter {
+		padding-right: 20%!important;
+	}
+	.second-album .image-filter, .fourth-album .image-filter {
+		padding-left: 20%!important;
 	}
 }
 
