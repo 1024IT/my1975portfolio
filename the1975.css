@@ -69,6 +69,7 @@ nav.navbar {
 
 nav .row {
 	width: 100%;
+	font-size: 18px;
 }
 
 /*#navbarButtons ul {
@@ -182,7 +183,6 @@ button.hamburger-menu:focus, button.hamburger-menu:hover {
 
 #navbarButtons {
   text-align: center;
-  font-size: 24px;
 }
 
 #navbarButtons hr {
@@ -209,24 +209,47 @@ button.hamburger-menu:focus, button.hamburger-menu:hover {
     color: white;
 }*/
 
-
+/* The end of navigation header stylings */
+/* The beginning of hero stylings */
 .mobile-title {
 	text-align: center;
 }
 
-.mattyimage {
-	width: 100%;
-	height: auto;
-}
 
 .hero-copy h1 {
-	font-size: 40px;
+	font-size: 47px;
 }
 
 .hero-copy p {
 	text-align: center;
-	font-size: 16px;
+	font-size: 13px;
 	margin-bottom: 16px;
+}
+/* The end of hero stylings */
+/* The beginning of albums section stylings */
+
+
+.album-quote h2 {
+	font-size: 37px;
+	text-align: right; 
+	line-height: 0.1em;
+	white-space: nowrap;
+} 
+
+.album-quote h2 span {
+	display: inline-block;
+	width: 65%;
+	border-bottom: 1px solid white;
+}
+
+.album-quote p {
+	font-size: 14px;
+	line-height: 2.5
+}
+
+.album-quote p.quote-reference {
+	font-size: 9px;
+	text-align: right;
 }
 
 /* --Media query----------------------------------- */
@@ -244,6 +267,29 @@ button.hamburger-menu:focus, button.hamburger-menu:hover {
   .hero-copy p {
   	text-align: left;
   }
+  .album-jacket {
+  	position: relative;
+  }
+  .album-jacket img {
+  	position: absolute;
+  	top: 50%;
+  	transform: translateY(-50%);
+  	left: -100px;
+  	z-index: 1;
+  }
+  .album-quote {
+		background-image: url(images/mattylive1.jpg);
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+		padding: 0 0;
+	}
+	.album-quote .image-filter {
+		height: 100%;
+		width: 100%;
+		padding: 10% 20% 5% 10%;
+		background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+	}
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
