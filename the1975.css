@@ -155,8 +155,8 @@ button.hamburger-menu:focus, button.hamburger-menu:hover {
     color: white;
 }*/
 
-/* The end of navigation header stylings */
-/* The beginning of hero stylings */
+/* End of navigation header stylings */
+/* Beginning of hero stylings */
 .mobile-title {
 	text-align: center;
 }
@@ -171,9 +171,11 @@ button.hamburger-menu:focus, button.hamburger-menu:hover {
 	font-size: 13px;
 	margin-bottom: 16px;
 }
-/* The end of hero stylings */
-/* The beginning of albums section stylings */
-
+/* End of hero stylings */
+/* Beginning of albums section stylings */
+.album-jacket img {
+	max-width: 100%;
+}
 
 .album-quote h2 {
 	position: relative;
@@ -237,6 +239,45 @@ button.hamburger-menu:focus, button.hamburger-menu:hover {
 	font-size: 9px;
 	text-align: right;
 }
+/* End of albums section stylings */
+
+.large-text {
+	max-width: 100%;
+	font-size: 60px;
+	text-align: center;
+	letter-spacing: 50px;
+	overflow: hidden;
+	color: transparent;
+	opacity: 0.1;
+	-webkit-text-stroke-width: 1px;
+	-webkit-text-stroke-color: white;
+}
+
+/* Beginning of video section styling */
+.video .row {
+	text-align: center;
+	background-color: #A7A7A7;
+}
+
+.video h2 {
+	font-size: 31px;
+}
+
+.video h4 {
+	font-size: 21px;
+}
+
+.video p {
+	font-size: 14px;
+}
+.iframe-video {
+	background-color: #FFCBCC;
+}
+
+.iframe-video p {
+	text-align: right;
+	font-size: 24px;
+}
 
 /* --Media query----------------------------------- */
 /* Small devices (landscape phones, 576px and up) */
@@ -261,6 +302,7 @@ button.hamburger-menu:focus, button.hamburger-menu:hover {
   	top: 50%;
   	transform: translateY(-50%);
   	z-index: 1;
+  	max-height: 90%;
   }
   .first-album img, .third-album img {
   	left: -100px;
@@ -295,12 +337,27 @@ button.hamburger-menu:focus, button.hamburger-menu:hover {
 		width: 100%;
 		background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
 	}
+
 	.first-album .image-filter, .third-album .image-filter {
 		padding-right: 20%!important;
 	}
+
 	.second-album .image-filter, .fourth-album .image-filter {
 		padding-left: 20%!important;
 	}
+
+	.video .row {
+	background: repeating-linear-gradient(-75deg, #FFCBCC, #FFCBCC 50%, #A7A7A7 50%, #A7A7A7 100%);
+	}
+
+	.video-text-wrapper {
+		text-align: left;
+	}
+	.iframe-video {
+		background-color: transparent;
+	}
+
+	
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
