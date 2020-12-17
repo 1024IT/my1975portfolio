@@ -127,13 +127,19 @@ button.hamburger-menu:focus, button.hamburger-menu:hover {
 #navbarButtons {
   text-align: center;
 }
+/*
+#navbarButtons ul {
+  height: 100vh;
+}*/
 
-#navbarButtons a:hover, #navbarButtons a:active, a.dirtyhit-link {
+.navbar a:hover, .navbar a:active {
 	color: white;
+	text-decoration: underline;
 }
 
 /* End of navigation header stylings */
 /* Beginning of hero stylings */
+
 .mobile-title {
 	text-align: center;
 }
@@ -153,36 +159,30 @@ button.hamburger-menu:focus, button.hamburger-menu:hover {
 	max-width: 100%;
 }
 
-.album-quote h2 {
+.album-quote h4 {
 	position: relative;
 	white-space: nowrap;
 	overflow: hidden;
 }
 
-.first-album h2, .third-album h2 {
+.first-album h4, .third-album h4 {
 	text-align: right;
 }
 
-.first-album h2 {
+.first-album h4 {
 	font-size: 37px;
 }
 
-.second-album h2, .third-album h2 {
+.second-album h4, .third-album h4 {
 	font-size: 27px;
 }
 
-.fourth-album h2 {
+.fourth-album h4 {
 	font-size: 29px;
 }
 
-.album-quote h2 span {
-	display: inline-block;
-	line-height: 0.2em;
-	width: 60%;
-	border-bottom: 1px solid white;
-}
 
-.first-album h2:before, .third-album h2:before {
+.first-album h4:before, .third-album h4:before {
   background-color: white;
   content: "";
   display: inline-block;
@@ -194,7 +194,7 @@ button.hamburger-menu:focus, button.hamburger-menu:hover {
   margin-left: -50%;
 }
 
-.second-album h2:after, .fourth-album h2:after {
+.second-album h4:after, .fourth-album h4:after {
 	background-color: white;
   content: "";
   display: inline-block;
@@ -287,6 +287,16 @@ button.hamburger-menu:focus, button.hamburger-menu:hover {
 /* --Media query----------------------------------- */
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
+	.hero-image-wrapper {
+		position: relative;
+	}
+	.hero-image-wrapper .mobile-title {
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		left: 10%;
+		color: #222222;
+	}
 }
 
 /* Medium devices (tablets, 768px and up) */
