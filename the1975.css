@@ -27,10 +27,7 @@ nav a {
 	color: white;
 }
 
-#dirtyhit_link {
-	display: flex;
-	align-items: center;
-}
+
 
 nav #menuBarToggler {
   display: flex;
@@ -131,29 +128,9 @@ button.hamburger-menu:focus, button.hamburger-menu:hover {
   text-align: center;
 }
 
-#navbarButtons hr {
-	border-top: 2px solid white;
-	width: 70%;
-}
-/*.header {
-	position: relative;
+#navbarButtons a:hover, #navbarButtons a:active, a.dirtyhit-link {
 	color: white;
-	background-color: none;
-	height: 64px;
-}*/
-
-/*.dirty-hit {
-	position: fixed;
-	float: right;
-	left: 1135px;
-	padding: 13px 22px;
-	font-family: "HGSゴシックE";
-	letter-spacing: 2px;
-	font-size: 12px;
-    z-index: 100;
-    text-decoration: none;
-    color: white;
-}*/
+}
 
 /* End of navigation header stylings */
 /* Beginning of hero stylings */
@@ -161,15 +138,14 @@ button.hamburger-menu:focus, button.hamburger-menu:hover {
 	text-align: center;
 }
 
-
 .hero-copy h1 {
 	font-size: 47px;
 }
 
 .hero-copy p {
+	font-size: 15px;
+	line-height: 2;
 	text-align: center;
-	font-size: 13px;
-	margin-bottom: 16px;
 }
 /* End of hero stylings */
 /* Beginning of albums section stylings */
@@ -253,7 +229,11 @@ button.hamburger-menu:focus, button.hamburger-menu:hover {
 	-webkit-text-stroke-color: white;
 }
 
-/* Beginning of video section styling */
+.large-text.modernway {
+	margin-bottom: -35px;
+}
+
+/* Beginning of video section stylings */
 .video .row {
 	text-align: center;
 	background-color: #A7A7A7;
@@ -274,10 +254,35 @@ button.hamburger-menu:focus, button.hamburger-menu:hover {
 	background-color: #FFCBCC;
 }
 
-.iframe-video p {
+.view-more {
 	text-align: right;
 	font-size: 24px;
 }
+/* End of video section stylings */
+/* Beginning of store section stylings */
+
+.store {
+	position: relative;
+	background-color: rgba(94,94,94,0.3);
+}
+
+.store h2 {
+	font-size: 31px;
+	width: 200px;
+	height: 50px;
+	margin-left: -15px;
+	color: black;
+	background-color: white;
+}
+
+.goods-info h6 {
+	font-size: 18px;
+}
+
+.goods-info h4 {
+	font-size: 24px;
+}
+
 
 /* --Media query----------------------------------- */
 /* Small devices (landscape phones, 576px and up) */
@@ -335,6 +340,10 @@ button.hamburger-menu:focus, button.hamburger-menu:hover {
 	.album-quote .image-filter {
 		height: 100%;
 		width: 100%;
+		background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+	}
+
+	.first-album .image-filter {
 		background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
 	}
 
@@ -346,6 +355,13 @@ button.hamburger-menu:focus, button.hamburger-menu:hover {
 		padding-left: 20%!important;
 	}
 
+	.large-text {
+		font-size: 150px;
+	}
+
+	.large-text.modernway {
+		margin-bottom: -90px;
+	}
 	.video .row {
 	background: repeating-linear-gradient(-75deg, #FFCBCC, #FFCBCC 50%, #A7A7A7 50%, #A7A7A7 100%);
 	}
@@ -357,6 +373,15 @@ button.hamburger-menu:focus, button.hamburger-menu:hover {
 		background-color: transparent;
 	}
 
+	.store h2 {
+		font-size: 51px;
+		width: 435px;
+		height: 130px;
+	}
+
+	.store-goods {
+	height: 650px;
+	}
 	
 }
 
