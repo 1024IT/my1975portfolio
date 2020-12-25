@@ -141,6 +141,7 @@ button.hamburger-menu:focus, button.hamburger-menu:hover {
 /* Beginning of hero stylings */
 
 .mobile-title {
+	font-size: 52px;
 	text-align: center;
 }
 
@@ -282,8 +283,62 @@ button.hamburger-menu:focus, button.hamburger-menu:hover {
 .goods-info h4 {
 	font-size: 24px;
 }
+/* End of store section stylings */
+/* Beginning of blogs and news section stylings */
 
+.blog-and-news .row {
+	max-width: 1160px;
+}
+.blog-and-news .image-filter {
+	height: 100%;
+	width: 100%;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+}
 
+.blog-and-news button {
+	font-size: 26px;
+	color: white;
+  border: 3px double white;
+  background: transparent;    
+  outline:0;
+}
+
+.blog, .news {
+	background-size: cover;
+	min-height: 20vh;
+}
+
+.blog {
+	background-image: url(images/blog-mobile.png);
+
+}
+
+.news {
+	background-image: url(images/news-mobile.png);
+}
+
+/* End of blogs and news section stylings */
+
+footer ul {
+	list-style-type: none;
+	text-align: center;
+}
+
+.footer-black {
+	font-size: 16px;
+	background-color: black;
+}
+
+.footer-white {
+	font-size: 14px;
+	background-color: white;
+	color: #818181;
+}
+
+.footer-white .copyright {
+	font-size: 9px;
+	text-align: center;
+}
 /* --Media query----------------------------------- */
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
@@ -301,6 +356,9 @@ button.hamburger-menu:focus, button.hamburger-menu:hover {
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
+	.album-quote .image-filter {
+		background-image: none;
+	}
   
 }
 
@@ -391,6 +449,23 @@ button.hamburger-menu:focus, button.hamburger-menu:hover {
 
 	.store-goods {
 	height: 650px;
+	}
+
+	.blog, .news {
+		background-image: none;
+		position: relative;
+		min-height: 100%;
+	}
+
+	.blog-and-news .image-filter {
+		position: absolute;
+		top: 0;
+	}
+
+	.news img {
+		position: absolute;
+		right: 0;
+		z-index: -1;
 	}
 	
 }
